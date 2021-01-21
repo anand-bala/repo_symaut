@@ -34,7 +34,7 @@ public class MainTestSwMonitors extends BaseTest {
 		
 		// ---------------------------------------------------------
 		System.out.println("\n------------------------ BEGIN TEST -------------------------\n");
-		tree = parseSTLFormulaFromFile("src\\parser\\toparse");
+		tree = parseSTLFormulaFromFile("src/parser/toparse");
 		ParseTreeWalker walker = new ParseTreeWalker();
 
 		// -------------------------------------------------------------
@@ -65,8 +65,8 @@ public class MainTestSwMonitors extends BaseTest {
 //		trace = read_trace();		
 //		run_distance(composition);
 
-		//readCSV_trace("trace\\trace.csv", ",");
-		readCSV_trace("trace\\acc_velcity.txt", "[,\\s+]");
+		//readCSV_trace("trace/trace.csv", ",");
+		readCSV_trace("trace/acc_velcity.txt", "[,\\s+]");
 		
 		runDistanceCSV(composition);
 

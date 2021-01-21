@@ -63,7 +63,7 @@ public class TestFrontEnd {
 		ParseTree tree = null;		
 		
 		try {
-			lexer  = new StlLexer(CharStreams.fromFileName("src\\parser\\toparse"));
+			lexer  = new StlLexer(CharStreams.fromFileName("src/parser/toparse"));
 			tokens = new CommonTokenStream(lexer);
 		
 			parser = new StlParser(tokens);

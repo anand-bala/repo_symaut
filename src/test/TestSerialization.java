@@ -37,7 +37,7 @@ public class TestSerialization extends BaseTest {
 		
 		// ---------------------------------------------------------
 		System.out.println("\n------------------------ BEGIN TEST -------------------------\n");
-		tree = parseSTLFormulaFromFile("src\\parser\\toparse");
+		tree = parseSTLFormulaFromFile("src/parser/toparse");
 		ParseTreeWalker walker = new ParseTreeWalker();
 
 		// -------------------------------------------------------------
@@ -68,7 +68,7 @@ public class TestSerialization extends BaseTest {
 		
 		// ------------- SERIALIZE
 		try {
-			SerializationUtil.serialize(a1, "serialized\\automaton_serialized");
+			SerializationUtil.serialize(a1, "serialized/automaton_serialized");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -80,7 +80,7 @@ public class TestSerialization extends BaseTest {
 		
 		//-------------- DESERIALIZE
 		try {
-			a2 = (Automaton) SerializationUtil.deserialize("serialized\\automaton_serialized");
+			a2 = (Automaton) SerializationUtil.deserialize("serialized/automaton_serialized");
 		} catch (ClassNotFoundException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

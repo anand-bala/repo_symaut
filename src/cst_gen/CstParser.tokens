@@ -18,3 +18,14 @@ LINE_TERMINATOR=17
 WHITESPACE=18
 COMMENT=19
 LINE_COMMENT=20
+'('=1
+')'=2
+'not'=3
+'or'=4
+'and'=5
+'=='=6
+'!=='=7
+'>='=8
+'<='=9
+'>'=10
+'<'=11

@@ -339,7 +339,7 @@ public class BaseTest {
 		StringBuilder sb = new StringBuilder();
 
 		try {
-			br = new BufferedReader(new FileReader("src\\parser\\trace"));
+			br = new BufferedReader(new FileReader("src/parser/trace"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

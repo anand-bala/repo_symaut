@@ -128,7 +128,7 @@ public class DynamicAlgorithm extends BaseAutomatonIterator {
 		// open file for writing.
 
 		List<String> lines = Arrays.asList("");
-		file = Paths.get("output\\output.txt");
+		file = Paths.get("output/output.txt");
 		try {
 			//clear the file
 			Files.write(file, lines, Charset.forName("UTF-8"));
