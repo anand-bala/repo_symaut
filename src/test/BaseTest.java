@@ -167,7 +167,7 @@ public class BaseTest {
 	 */
 	public static void loadXMLconfig() {
 		try {
-			File fXmlFile = new File("XMLcfg\\config.xml");
+			File fXmlFile = new File("XMLcfg/config.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
