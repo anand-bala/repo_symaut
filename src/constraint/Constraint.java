@@ -45,7 +45,7 @@ public class Constraint implements Serializable{
 	 * Default solver used when creating ConstraintNodeConvertVisitor
 	 * 
 	 */
-	transient public static Solvers defaultSolver = Solvers.PRINCESS;
+	transient public static Solvers defaultSolver = Solvers.Z3;
 
 	/**
 	 * Makes a human readable printout of the tree.

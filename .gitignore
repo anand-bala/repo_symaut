@@ -1,3 +1,6 @@
+*.so
+*.dll
+*.dylib
 
 # Created by https://www.toptal.com/developers/gitignore/api/java,eclipse
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,eclipse

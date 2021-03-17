@@ -46,6 +46,9 @@
   <path id="classpath">
     <fileset dir="${basedir}/">
       <include name="${lib.dir}/*.jar" />
+      <include name="${lib.dir}/*.so" />
+      <include name="${lib.dir}/*.dll" />
+      <include name="${lib.dir}/*.dylib" />
       <exclude name="${lib.dir}/*sources.jar"/>
       <exclude name="${lib.dir}/*javadoc.jar"/>
     </fileset>
@@ -122,7 +125,7 @@
 
   <target name="copy-dependencies">
     <copy todir="${dist.lib.dir}">
-      <fileset dir="${lib.dir}" includes="**/*.jar" excludes="**/*sources.jar, **/*javadoc.jar" />
+      <fileset dir="${lib.dir}" includes="**/*.jar, **/*.so, **/*.dll, **/*.dylib" excludes="**/*sources.jar, **/*javadoc.jar" />
     </copy>
   </target>
 

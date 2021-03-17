@@ -76,7 +76,7 @@ public class AutomataService {
 	 * Default solver used when creating ConstraintNodeConvertVisitor
 	 * 
 	 */
-	public static Solvers defaultSolver = Solvers.PRINCESS;
+	public static Solvers defaultSolver = Solvers.Z3;
 
 	/**
 	 * Configuration object used by SMT solver API.
