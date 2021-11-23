@@ -9,9 +9,5 @@
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.sosy-lab/java-smt -->
     <dependency org="org.sosy-lab" name="java-smt" rev="1.0.1"/>
-    <!-- https://mvnrepository.com/artifact/org.antlr/antlr4 -->
-    <dependency org="org.antlr" name="antlr4" rev="4.7.2"/>
-    <!-- https://mvnrepository.com/artifact/org.antlr/antlr4-runtime -->
-    <dependency org="org.antlr" name="antlr4-runtime" rev="4.7.2"/>
   </dependencies>
 </ivy-module>

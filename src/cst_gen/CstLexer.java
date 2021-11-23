@@ -1,4 +1,4 @@
-// Generated from /home/anand/src/stl-monitors/symaut/src/cst_parser/CstLexer.g4 by ANTLR 4.7.2
+// Generated from /home/anand/workspace/stl-monitors/symaut/src/cst_parser/CstLexer.g4 by ANTLR 4.7.2
 
 	package cst_gen;
 

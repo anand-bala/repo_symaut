@@ -66,7 +66,7 @@ public class MainTestSwMonitors extends BaseTest {
 //		run_distance(composition);
 
 		//readCSV_trace("trace/trace.csv", ",");
-		readCSV_trace("trace/acc_velcity.txt", "[,\\s+]");
+		readCSV_trace("trace/sample.txt", "[,\\s+]");
 		
 		runDistanceCSV(composition);
 

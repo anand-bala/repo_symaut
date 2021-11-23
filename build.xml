@@ -1,15 +1,6 @@
 <?xml version="1.0"?>
 <project xmlns:ivy="antlib:org.apache.ivy.ant" name="symaut" default="main" basedir=".">
   <!-- vim: set tabstop=2 shiftwidth=2 expandtab filetype=ant : -->
-  <!-- here is the version of Ivy we will use. change this property to try a newer
-  version if you want -->
-  <property name="ivy.install.version" value="2.4.0"/>
-  <property name="ivy.jar.dir" value="${basedir}/ivy"/>
-  <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
-
-  <property name="antlr.install.version" value="4.7.2-complete"/>
-  <property name="antlr.jar.dir" value="${basedir}/antlr"/>
-  <property name="antlr.jar.file" value="${antlr.jar.dir}/antlr.jar"/>
 
   <property name="src.dir" location="src"/>
   <property name="build.dir" location="bin"/>
@@ -18,6 +9,14 @@
   <property name="lib.dir" value="lib"/>
   <property name="main-class" value="test/MainTestSwMonitors" />
   <property name="projectName" value="symaut" />
+
+  <property name="antlr.install.version" value="4.7.2-complete"/>
+  <property name="antlr.jar.dir" value="${lib.dir}"/>
+  <property name="antlr.jar.file" value="${antlr.jar.dir}/antlr.jar"/>
+
+  <property name="ivy.install.version" value="2.4.0"/>
+  <property name="ivy.jar.dir" value="${basedir}/ivy"/>
+  <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
 
   <!-- ivy start -->
   <target name="download-ivy" unless="skip.download">

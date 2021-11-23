@@ -1,3 +1,1 @@
-assertion myAssertionNO_RW4:
-always( (acc > 5) implies (always[0:1] (acc>0)) )
-; 
+assertion check_not_phi: (x < 1) or (x > 5);
