@@ -3,6 +3,8 @@ package frontend;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.antlr.v4.runtime.ParserRuleContext;
+
 import automaton.AutomataService;
 import automaton.AutomatonTransition;
 import automaton.TTester;
@@ -81,9 +83,9 @@ public class AutomataGenListener extends StlParserBaseListener {
 			else
 				System.err.println("exitAssertion::CHILD AUTOMATON0 IS NOT IN THE MAP");
 
-			TTester automaton = AutomataService.getAlwaysTrueTester(child.getSingleOutputVar()); // for
-			automataMap.put(ctx.getText(), automaton);
-			topKey = ctx.getText();
+			// TTester automaton = AutomataService.getAlwaysTrueTester(child.getSingleOutputVar()); // for
+			// automataMap.put(ctx.getText(), automaton);
+			// topKey = ctx.getText();
 		}
 	}
 
@@ -684,6 +686,14 @@ public class AutomataGenListener extends StlParserBaseListener {
 			topKey = ctx.getText();		
 		}			
 	}
+
+	@Override public void enterEveryRule(ParserRuleContext ctx) { 
+    System.out.println("rule entered: " + ctx.getText());
+  }
+	@Override public void exitEveryRule(ParserRuleContext ctx) { 
+    System.out.println("rule exited: " + ctx.getText());
+  }
+
 
 
 	

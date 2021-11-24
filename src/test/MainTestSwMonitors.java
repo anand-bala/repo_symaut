@@ -57,6 +57,7 @@ public class MainTestSwMonitors extends BaseTest {
 		printCompositionInfo(composition);
 		updateCfgWithVars(composition.getVariables()); 
 
+    System.exit(0);
 		// ------------------- RUN THE ALGORITHM ------------------------//
 		System.out.println("\n----------------- OBTAINING THE DISTANCE --------------\n");
 

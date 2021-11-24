@@ -1,1 +1,1 @@
-assertion check_not_phi: (x < 1) or (x > 5);
+assertion check_not_phi: (eventually[0:2](x < 1)) and (eventually[0:2](y > 5));
